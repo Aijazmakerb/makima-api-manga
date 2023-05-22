@@ -81,9 +81,7 @@ export const searchManga = async(query) => {
                 });
             })
             .get();
-        return {
-            results: results,
-        };
+        return results;
     } catch (error) {
         return error;
     }
